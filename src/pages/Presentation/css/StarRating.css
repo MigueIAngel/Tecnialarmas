@@ -1,0 +1,15 @@
+
+.star-rating {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #44443f; /* Color amarillo para estrellas llenas */
+  }
+  
+  .star {
+    cursor: pointer;
+  }
+  
+  .selected {
+    color: #ff9900; /* Color naranja para estrellas seleccionadas */
+  }
+  

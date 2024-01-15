@@ -1,0 +1,157 @@
+.formulariore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.send-review {
+  background-color: #21305D;
+  color: #F6F6F6;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+  /* Hace que el margen superior del botón absorba automáticamente el espacio restante */
+  margin-bottom: 20px;
+  /* Agrega un espacio inferior para separar el botón de otros elementos */
+}
+
+.send-review:hover {
+  background-color: #405A8B;
+}
+
+.formlabel {
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  color: #21305D;
+  margin: 10px;
+  align-self: start;
+
+
+}
+
+.review-name {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #21305D;
+  margin: 10px;
+  align-self: start;
+}
+
+.review-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  background-size: contain;
+
+}
+.confirmation-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover{
+      background-color: #405A8B;
+    }
+  }
+  .confirmDelete{
+    background-color: green;
+    color: #F6F6F6;
+    
+    
+  }
+  .cancelDelete{
+    background-color: red;
+    color: #F6F6F6;
+  }
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Estilos para RecentReviews.css */
+.reviewDelete {
+  align-self: end;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  width: 25%;
+  height: 50%;
+}
+.reviewDelete:hover{
+  cursor: pointer;
+}
+.recent-reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-date {
+  align-self: flex-start;
+  font-size: 12px;
+  color: #666;
+}
+
+.review-user-img {
+  align-self: flex-start;
+  margin-top: 5px;
+}
+
+.review-user-img img {
+  width: 50px;
+  /* Ajusta el tamaño según sea necesario */
+  height: 50px;
+  /* Ajusta el tamaño según sea necesario */
+  border-radius: 50%;
+}
+
+.review-stars {
+  align-self: flex-end;
+  color: #fdd835;
+  /* Color de estrellas (puedes ajustar según tu diseño) */
+}
+
+.review-comment {
+  align-self: flex-start;
+  margin-top: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  color: black;
+  margin: 10px;
+  align-self: start;
+}

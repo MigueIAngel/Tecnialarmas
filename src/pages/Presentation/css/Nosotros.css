@@ -1,0 +1,173 @@
+.containerNosotros {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* Añade una fila más para el título */
+    grid-template-columns: 1fr;
+    /* Solo una columna */
+    height: 100%;
+    /* Utiliza toda la altura del contenedor principal */
+    overflow-y: auto;
+    /* Añade desplazamiento vertical si es necesario */
+    background-color: #267cb9;
+}
+
+.primeraFilaNosotros {
+    position: relative;
+
+    overflow-x: hidden;
+    background-color: #F6F6F6;
+
+}
+
+.slider-containerNosotros {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.slider-itemNosotros {
+    min-width: 100%;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    /* Hace que la imagen ocupe el 100% del contenedor padre */
+    height: auto;
+    /* Mantiene la proporción original de la imagen */
+}
+
+.segundaFilaNosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.columnaIzquierdaNosotros {
+    background-color: #267cb9;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: #F6F6F6;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: auto;
+}
+
+.columnaDerechaNosotros {
+    background-color: #21305D;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: #F6F6F6;
+
+}
+
+.historiaNosotros {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Estilo para cada fila dentro de la historia */
+.historia-rowNosotros {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo para la imagen en la historia */
+.historia-imagenNosotros {
+    width: 250px;
+    padding: 3%;
+    margin-left: 8%;
+    border-radius: 30px;
+
+}
+
+/* Estilo para el texto en la historia */
+.historia-textoNosotros {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: medium;
+    color: #21305D;
+    flex: 1;
+    text-align: justify;
+    font-size: 20pt;
+    padding: 4%;
+}
+
+.separatorNosotros,
+.separator-respNosotros {
+    align-content: center;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 5%;
+    font-weight: bold;
+    background-color: #F6F6F6;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    color: #21305D;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.SeparadorNosotros {
+    align-content: center;
+    text-align: right;
+    font-family: 'Quicksand', sans-serif;
+    color: #21305D;
+    font-weight: bold;
+    font-size: xx-large;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 150px;
+}
+
+@media (max-width: 1000px) {
+    .containerNosotros {
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr;
+    }
+
+    .segundaFilaNosotros {
+        grid-template-columns: 1fr;
+    }
+
+    .columnaIzquierdaNosotros,
+    .columnaDerechaNosotros {
+        grid-template-columns: 1fr;
+        border-radius: 0;
+        /* Remove border radius for smaller screens */
+    }
+
+    .historia-textoNosotros {
+        text-align: justify;
+        font-size: medium;
+    }
+
+    .imghistoria {
+        margin-top: 8%;
+        font-size: medium;
+        
+    }
+    .imgvision{
+        margin-top: -20%;
+        
+    
+    }
+
+    .historia-imagenNosotros {
+        width: 150px;
+        height: auto;
+        margin-left: 0;
+
+
+    }
+
+    .SeparadorNosotros {
+        font-size: 13pt;
+    }
+}

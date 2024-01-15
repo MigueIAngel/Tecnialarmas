@@ -1,0 +1,47 @@
+.medio-ambiente-container{
+    background-color: #F6F6F6 ;
+    height: auto;
+    padding-bottom: 2%;     
+}
+.green-title-container{
+    text-align: left;
+}
+
+.green-title{    
+    background-color: #51A133;
+    color: #F6F6F6;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 20pt;
+    margin: 2%;
+    margin-bottom: 1%;
+    padding: 0.5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: left;
+    display: inline-block;
+}
+
+.texto-central-medio-ambiente{
+    color:#1D2817;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;    
+    font-size: 15pt; 
+    margin-top: 0%;   
+    padding-left: 3%;
+    padding-right: 3%; 
+    
+}
+
+@media (max-width: 1000px) {
+    .green-title {
+        font-size: 13pt;
+    }
+    
+    .texto-central-medio-ambiente {
+        font-size: 10pt;
+    }
+}
+    
+

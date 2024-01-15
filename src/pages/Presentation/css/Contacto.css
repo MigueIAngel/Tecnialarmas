@@ -1,0 +1,74 @@
+.Contacto {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6F6;
+    height: 100%;
+}
+
+.buttonsC {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.buttonContacto {
+    background-color: transparent;
+    font-family: 'Quicksand', sans-serif;
+    color: #21305D;
+    font-weight: bold;
+    text-align: center;    
+    box-sizing: border-box;    
+    width: 200px;
+    height: auto;
+    border-radius: 60px;
+    margin: 5px;
+    border: none;
+}
+
+.buttonContacto img {
+    width: 80%;
+    
+}
+
+.buttonContacto:focus {
+    background-color: #acb6d4;
+    color: aliceblue;
+}
+
+.buttonTextContacto {
+    margin-top: 7px;
+    font-size: 1.5em;
+}
+
+.buttonContacto:hover {
+    background-color: #acb6d4;
+
+}
+
+.buttonContacto:active {
+    background-color: #acb6d4;
+
+}
+
+
+@media (max-width: 900px) {
+    .buttonsC {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .buttonsC button {
+        width: 30%;
+        /* Ajusta el ancho de cada botón según tus necesidades */
+        margin: 1%;
+        /* Agrega un pequeño margen entre los botones */
+    }
+
+    .buttonTextContacto {
+        font-size: 1em;
+        /* Ajusta el tamaño del texto según tus necesidades */
+    }
+}

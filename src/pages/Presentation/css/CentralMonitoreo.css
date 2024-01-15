@@ -1,0 +1,34 @@
+.central-monitoreo {
+background-color: #F6F6F6;
+  
+}
+
+.titulo-central-monitoreo{
+    padding-top: 3%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: #21305D;
+    font-size: 30pt;
+}
+
+.texto-central-monitoreo{
+    background-color: #F6F6F6;
+    color:#182440;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    font-size: 15pt;    
+    padding: 3%;
+    padding-top: 0%;
+    padding-bottom: 1%;
+}
+
+@media (max-width: 1000px) {
+    .titulo-central-monitoreo {
+        font-size: 20pt;
+    }
+    
+    .texto-central-monitoreo {
+        font-size: 10pt;
+    }
+}

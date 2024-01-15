@@ -1,0 +1,120 @@
+.form-container {
+    padding: 3%;
+    background-color: #f6f6f6;
+    display: flex;
+    /* align-items: center;  */
+}
+
+.form-img-container {
+
+    color: #182440;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20pt;
+}
+
+.form-img-container img {
+    width: 300px;
+}
+
+.form-container input,
+textarea {
+    font-size: 15pt;
+    font-family: 'Quicksand', sans-serif;
+
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #182440;
+    width: 90%;
+    /* Cambiado a 90% para ocupar casi todo el ancho */
+    height: 50px;
+    margin-left: 10px;
+    /* Cambiado a 10px para agregar un margen a la izquierda */
+    margin-bottom: 10px;
+}
+
+
+.form-container input[type="checkbox"] {    
+    text-align: center;
+    
+    width: 20px;
+    height: 20px;
+    border: 1px solid #182440;
+    cursor: pointer;
+
+}
+
+.form-container input[type="checkbox"]:checked {  
+    background-color: #1E6897;
+    border-color: #182440;
+}
+
+
+.form-container textarea[name="comentario"] {
+    height: 100px;
+    resize: none;
+}
+
+.form-container button {
+    border: none;
+    outline: none;
+    background-color: #1E6897;
+    color: #F6F6F6;
+    cursor: pointer;
+    padding: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 15pt;
+    margin: 10px;
+}
+
+.check {
+    font-weight: bold;
+    color: #182440;
+    
+}
+
+.check span{
+    position: relative;
+    top: -5px;
+}
+
+.bottom-row {
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+@media (max-width: 1000px) {
+    .form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-img-container {
+        margin-bottom: 20px;
+    }
+
+    .form-img-container img {
+        width: 200px;
+    }
+
+    .form-container input,
+    textarea {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .bottom-row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
