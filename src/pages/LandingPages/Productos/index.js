@@ -66,7 +66,7 @@ function Productos() {
 
         <img className={`section-button ${selectedSection === "alarma" ? "selected" : ""}`} onClick={() => handleSectionClick("alarma")} src={require("../../../assets/alarma_blanco_btn.png")} alt="Logo 3" />
         <img className={`section-button ${selectedSection === "cctv" ? "selected" : ""}`} onClick={() => handleSectionClick("cctv")} src={require("../../../assets/cctv_blanco_btn.png")} alt="Logo 3" />
-        <img className={`section-button ${selectedSection === "control" ? "selected" : ""}`} onClick={() => handleSectionClick("control")} src={require("../../../assets/control_acceso_blanco_btn.png")} alt="Logo 3" />
+        <img className={`section-button ${selectedSection === "acceso" ? "selected" : ""}`} onClick={() => handleSectionClick("acceso")} src={require("../../../assets/control_acceso_blanco_btn.png")} alt="Logo 3" />
         <img className={`section-button ${selectedSection === "otros" ? "selected" : ""}`} onClick={() => handleSectionClick("otros")} src={require("../../../assets/otros_blanco_btn.png")} alt="Logo 3" />
 
       </div>
@@ -75,7 +75,12 @@ function Productos() {
           {isMobile && (
             <button className='toggle-sidebar' onClick={() => toggleMenu()}>&#9776;</button>
           )}
+          {isMobile && (
+            <h1 className='section-tittle'>Sección de {selectedSection}</h1>
+          )}
         </div>
+
+
         <hr className="blue-horizontal-line"></hr>
         {selectedSection === "alarma" && (
           <div className={"section"}>
@@ -132,14 +137,49 @@ function Productos() {
             </div>
           </div>
         )}
-        {selectedSection === "control" && (
-          <div className={`section`}>
-            <div className='product-card' onClick={() => handleProductClick({ title: "VISTA-32FBPT otros", image: "producto1.png", description: "Este panel de alarma combina las funciones de detección de incendio e intrusión." })}>
-              <img className='product-image' src={require("../../../assets/Productos/producto1.png")} alt="Logo 3" />
-              <span className='product-title'>VISTA-32FBPT otros</span>
+        {selectedSection === "acceso" && (
+          <div>
+            <div className='separator'>
+              <h1 className='text'>Proximidad</h1>
             </div>
-          </div>
-        )}
+            <div className={`section`}>
+
+              <div className='product-card' onClick={() => handleProductClick({ title: "ProID 10", image: "proid10.jpg", description: "La serie de lectores ProID está diseñada para ofrecer diferentes opciones de tecnologías en tarjetas a los clientes, tales como 125KHz EM, 13.56MHz IC, DESFire, FeliCa o Legic. Con una robusta protección a todo tipo de clima y un estético y moderno diseño, la serie de lectores ProID es la mejor opción para aplicaciones en interior o exterior." })}>
+                <img className='product-image' src={require("../../../assets/Productos/proid10.jpg")} alt="Logo 3" />
+                <span className='product-title'>ProID 10</span>
+              </div>
+              <div className='product-card' onClick={() => handleProductClick({ title: "ProID 20", image: "proid20.jpg", description: "La serie de lectores ProID está diseñada para ofrecer diferentes opciones de tecnologías en tarjetas a los clientes, tales como 125KHz EM, 13.56MHz IC, DESFire, FeliCa o Legic. Con una robusta protección a todo tipo de clima y un estético y moderno diseño, la serie de lectores ProID es la mejor opción para aplicaciones en interior o exterior." })}>
+                <img className='product-image' src={require("../../../assets/Productos/proid20.jpg")} alt="Logo 3" />
+                <span className='product-title'>ProID 20</span>
+              </div>
+              <div className='product-card' onClick={() => handleProductClick({ title: "ProID 30", image: "proid10.jpg", description: "La serie de lectores ProID está diseñada para ofrecer diferentes opciones de tecnologías en tarjetas a los clientes, tales como 125KHz EM, 13.56MHz IC, DESFire, FeliCa o Legic. Con una robusta protección a todo tipo de clima y un estético y moderno diseño, la serie de lectores ProID es la mejor opción para aplicaciones en interior o exterior." })}>
+                <img className='product-image' src={require("../../../assets/Productos/proid30.jpg")} alt="Logo 3" />
+                <span className='product-title'>ProID 30</span>
+              </div>
+            </div>
+            <div className='separator-left'>
+              <h1 className='text'>Biometricas</h1>
+            </div>
+            <div className={`section`}>
+              <div className='product-card' onClick={() => handleProductClick({ title: "Fr 1200", image: "fr1200.jpg", description: "El FR1200 es un lector biométrico compacto de huella digital con lector de tarjetas ID integrado para su uso en interiores o exteriores." })}>
+                <img className='product-image' src={require("../../../assets/Productos/fr1200.jpg")} alt="Logo 3" />
+                <span className='product-title'>Fr 1200</span>
+              </div>
+              <div className='product-card' onClick={() => handleProductClick({ title: "SpeedFace-V3L", image: "speedfacev3l.png", description: "El dispositivo de la serie es un terminal independiente de control de acceso de cara de luz visible de metal que puede ser utilizado en un espacio semiabierto. SpeedFace-V3L es compatible con RFID de verificación facial y de huellas dactilares y RFID con gran capacidad y rápido reconocimiento." })}>
+                <img className='product-image' src={require("../../../assets/Productos/speedfacev3l.png")} alt="Logo 3" />
+                <span className='product-title'>SpeedFace-V3L</span>
+              </div>
+            </div>
+            <div className='separator'>
+              <h1 className='text'>Torniquetes</h1>
+            </div>
+            <div className={`section`}>
+              <div className='product-card' onClick={() => handleProductClick({ title: "Serie TS2200", image: "ts2200.jpg", description: "La serie TS2200, fabricada en accero inoxidable, opera al reducir la señal desde el controlador de acceso a un botón permitiendo el acceso de una persona a la vez o puede permitir el acceso libre en alguan dirección ajustando el mecanismo." })}>
+                <img className='product-image' src={require("../../../assets/Productos/ts2200.jpg")} alt="Logo 3" />
+                <span className='product-title'>Serie TS2200</span>
+              </div>
+            </div>
+          </div>)}
         {selectedSection === "cctv" && (
           <div className={`section`}>
             <div className='product-card' onClick={() => handleProductClick({ title: "VISTA-32FBPT otros", image: "producto1.png", description: "Este panel de alarma combina las funciones de detección de incendio e intrusión." })}>

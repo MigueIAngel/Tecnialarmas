@@ -4,6 +4,7 @@ background-color: #F6F6F6;
 }
 
 .titulo-central-monitoreo{
+    text-align: center;
     padding-top: 3%;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;

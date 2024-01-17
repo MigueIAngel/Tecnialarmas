@@ -55,10 +55,13 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Raleway:wght@400;600;700&display=swap');
+      </style>
       <CssBaseline />
-      
+
       <DefaultNavbar routes={routes} brand="TECNIALARMAS" />
-      
+
       <Routes>
         {getRoutes(routes)}
         <Route path="/presentation" element={<Presentation />} />
